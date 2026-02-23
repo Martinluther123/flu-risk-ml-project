@@ -4,10 +4,10 @@
 This project develops and deploys a machine learning model to predict influenza risk.
 
 ## Structure
-- notebooks/ → model development.
-- models/ → trained model files.
-- app/ → Streamlit deployment.
-- data/ → dataset
+- notebooks → model development code.
+- models → trained model files.
+- app → Streamlit deployment.
+- data → dataset
 - report.md → Project questions and answers.
 
 ## Live App

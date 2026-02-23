@@ -7,10 +7,10 @@ import pandas as pd
 # Load model and feature order
 # ----------------------------
 
-# Get the directory where app.py is located
+# The directory where app.py is located
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Build correct paths
+# Correct paths
 MODEL_PATH = os.path.join(BASE_DIR, "../models/flu_risk_model.pkl")
 FEATURE_PATH = os.path.join(BASE_DIR, "../models/feature_order.pkl")
 
@@ -80,9 +80,9 @@ input_df["SEX_ENCODED"] = sex_encoded
 # Total symptom count
 input_df["SYMPTOM_COUNT"] = input_df[symptoms].sum(axis=1)
 
-# Grouped counts (example based on your earlier engineering)
+# Symptom grouped counts 
 resp_symptoms = ["COUGH","DIFFICULTY_BREATHING","SHORTNESS_OF_BREATH","SORE_THROAT","RUNNY_NOSE"]
-gi_symptoms = ["VOMITING","DIARRHEA","NAUSEA"]
+gi_symptoms = ["VOMITING", "DIARRHEA", "NAUSEA"]
 allergy_symptoms = ["ITCHY_NOSE","ITCHY_EYES","ITCHY_MOUTH","ITCHY_INNER_EAR","PINK_EYE"]
 
 input_df["RESP_SYMPTOM_COUNT"] = input_df[resp_symptoms].sum(axis=1)
@@ -90,7 +90,7 @@ input_df["GI_SYMPTOM_COUNT"] = input_df[gi_symptoms].sum(axis=1)
 input_df["ALLERGY_SYMPTOM_COUNT"] = input_df[allergy_symptoms].sum(axis=1)
 
 # ----------------------------
-# Reorder columns exactly as training
+# Columns reorder exactly as training
 # ----------------------------
 input_df = input_df[feature_order]
 

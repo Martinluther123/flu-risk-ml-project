@@ -38,14 +38,14 @@ By leveraging machine learning, healthcare providers can enhance traditional cli
 
 ## 1.4 Who Benefits
 
-**Healthcare Providers**
+**Healthcare Providers**:
 Enhanced decision support during patient intake, enabling quicker and more informed triage decisions.
 
-**Public Health Authorities**
+**Public Health Authorities**:
 Improved early detection trends and more effective resource planning during flu seasons.
 
-**Patients**
-Faster risk identification, supporting timely medical attention and appropriate care.
+**Patients**:
+Faster risk identification, supporting timely medical attention, and appropriate care.
 
 
 
